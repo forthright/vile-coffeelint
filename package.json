@@ -1,0 +1,34 @@
+{
+  "name": "@brentlintner/vile-coffeelint",
+  "version": "0.0.3",
+  "description": "A vile plugin for CoffeeLint",
+  "license": "MPL-2.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "bin/dev",
+    "test": "bin/test",
+    "test-cov": "bin/test-cov",
+    "wrap": "npm-shrinkwrap",
+    "update": "police -lt package.json && constable -u"
+  },
+  "dependencies": {
+    "@brentlintner/vile": "~0.1.8",
+    "bluebird": "2.9.34",
+    "cjson": "0.3.1",
+    "coffeelint": "1.11.1",
+    "lodash": "3.10.1"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "chai-as-promised": "5.1.0",
+    "coffee-script": "1.9.3",
+    "constable": "0.0.4",
+    "istanbul": "0.3.18",
+    "mimus": "0.1.2",
+    "mocha": "2.2.5",
+    "npm-shrinkwrap": "5.4.0",
+    "police": "0.4.0",
+    "sinon": "1.16.1",
+    "sinon-chai": "2.8.0"
+  }
+}
