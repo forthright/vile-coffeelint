@@ -12,7 +12,7 @@
     "update": "police -lt package.json && constable -u"
   },
   "dependencies": {
-    "@brentlintner/vile": "~0.1.8",
+    "@brentlintner/vile": "~0.4.1",
     "bluebird": "2.9.34",
     "cjson": "0.3.1",
     "coffeelint": "1.11.1",
@@ -28,6 +28,7 @@
     "mocha": "2.2.5",
     "npm-shrinkwrap": "5.4.0",
     "police": "0.4.0",
+    "release-it": "^2.3.1",
     "sinon": "1.16.1",
     "sinon-chai": "2.8.0"
   }
