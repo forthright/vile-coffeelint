@@ -67,15 +67,16 @@ describe "vile-coffeelint", ->
       expected = [{
         type: "style",
         path: "file_with_errors.coffee",
-        title: "coffeescript_error",
-        message: "[stdin]:2:12: error: missing )\nconsole.log\u001b[1;31m(\u001b[0m\n\u001b[1;31m           ^\u001b[0m (undefined)",
-        signature: "coffeelint::coffeescript_error",
-        where: { start: { line: 2 } }
+        title: "no_trailing_semicolons",
+        message: "Line contains a trailing semicolon (undefined)",
+        signature: "coffeelint::no_trailing_semicolons",
+        where: { start: { line: 1 } }
       }, {
         type: "style",
         path: "file_with_warnings.coffee",
         title: "max_line_length",
-        message: "Line exceeds maximum allowed length (Length is 97, max is 80)",
+        message: "Line exceeds maximum allowed length" +
+                  " (Length is 97, max is 80)",
         signature: "coffeelint::max_line_length",
         where: { start: { line: 1 } }
       }]

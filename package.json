@@ -10,10 +10,10 @@
     "README.md"
   ],
   "scripts": {
+    "compile-dev": "coffee -cbo .test test",
     "dev": "bin/dev",
     "test": "bin/test",
     "test-cov": "bin/test-cov",
-    "wrap": "npm-shrinkwrap",
     "update": "ncu -a"
   },
   "dependencies": {
