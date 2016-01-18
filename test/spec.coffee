@@ -63,16 +63,21 @@ describe "vile-coffeelint", ->
             .should.notify done
 
     describe "with an erroneous file", ->
+      # TODO: is everything just errors? (no warnings)
       expected = [{
-        type: "error",
-        file: "file_with_errors.coffee",
-        msg: "Line contains a trailing semicolon (undefined)",
-        where: { start: { line: 1 }, end: {} }
+        type: "style",
+        path: "file_with_errors.coffee",
+        title: "coffeescript_error",
+        message: "[stdin]:2:12: error: missing )\nconsole.log\u001b[1;31m(\u001b[0m\n\u001b[1;31m           ^\u001b[0m (undefined)",
+        signature: "coffeelint::coffeescript_error",
+        where: { start: { line: 2 } }
       }, {
-        type: "error",
-        file: "file_with_errors.coffee",
-        msg: "Line contains inconsistent indentation (Expected 2 got 3)",
-        where: { start: { line: 4 }, end: {} }
+        type: "style",
+        path: "file_with_warnings.coffee",
+        title: "max_line_length",
+        message: "Line exceeds maximum allowed length (Length is 97, max is 80)",
+        signature: "coffeelint::max_line_length",
+        where: { start: { line: 1 } }
       }]
 
       it "finds issues", ->
@@ -81,16 +86,3 @@ describe "vile-coffeelint", ->
           ignore: [ "file_without_errors.coffee" ]
 
         lib.punish(config).should.become expected
-
-    describe "with an errorless file", ->
-      it "finds no issues", ->
-        config =
-          config: "coffeelint.json"
-          ignore: [ "file_with_errors.coffee" ]
-
-        lib.punish(config).should.become [{
-          type: "ok",
-          file: "file_without_errors.coffee",
-          msg: "",
-          where: { start: {}, end: {} }
-        }]
