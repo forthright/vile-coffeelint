@@ -4,6 +4,11 @@
   "description": "A vile plugin for CoffeeLint",
   "license": "MPL-2.0",
   "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "README.md"
+  ],
   "scripts": {
     "dev": "bin/dev",
     "test": "bin/test",
