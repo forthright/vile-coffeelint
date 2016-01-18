@@ -1,4 +1,4 @@
-# vile-coffeelint
+# vile-coffeelint [![Circle CI](https://circleci.com/gh/brentlintner/vile-coffeelint.svg?style=svg&circle-token=6bbf75220c0e528b8a4ce2bc9426ea9f6b4df911)](https://circleci.com/gh/brentlintner/vile-coffeelint)
 
 A [vile](http://vile.io) plugin for [coffeelint](http://coffeelint.org).
 
