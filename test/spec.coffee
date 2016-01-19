@@ -63,6 +63,14 @@ describe "vile-coffeelint", ->
             .should.notify done
 
     describe "with an erroneous file", ->
+      it "returns an empty array", ->
+        config =
+          config: "coffeelint.json"
+          ignore: [ "*.coffee" ]
+
+        lib.punish(config).should.become []
+
+    describe "with an erroneous file", ->
       # TODO: is everything just errors? (no warnings)
       expected = [{
         type: "style",
