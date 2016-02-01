@@ -24,6 +24,8 @@ coffeelint:
 
 ## Ignoring Files
 
+`vile.ignore` is used as a base, but you can add onto it:
+
 ```yaml
 coffeelint:
   ignore: [
