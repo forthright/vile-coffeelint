@@ -1,5 +1,5 @@
 {
-  "name": "@brentlintner/vile-coffeelint",
+  "name": "@forthright/vile-coffeelint",
   "version": "0.1.3",
   "description": "A vile plugin for CoffeeLint",
   "license": "MPL-2.0",
@@ -17,7 +17,7 @@
     "update": "ncu -a"
   },
   "dependencies": {
-    "@brentlintner/vile": "^0.5.9",
+    "@forthright/vile": "^0.5.9",
     "bluebird": "^3.1.1",
     "cjson": "0.3.3",
     "coffeelint": "^1.14.2",
