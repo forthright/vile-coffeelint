@@ -11,7 +11,8 @@ A [vile](https://vile.io) plugin for [coffeelint](http://coffeelint.org).
 
 ## Installation
 
-    npm i vile-coffeelint
+    npm i vile --save-dev
+    npm i vile-coffeelint --save-dev
 
 ## Config
 
@@ -30,11 +31,20 @@ coffeelint:
 
 ```yaml
 coffeelint:
-  ignore: [
-    "some/path/**"
-    "file",
-    "dir"
-  ]
+  ignore:
+    - some/path/**
+    - file
+    - dir
+```
+
+## Allowing Files
+
+`vile.allow` is used as a base, but you alternatively specify:
+
+```yaml
+coffeelint:
+  allow:
+    - dir
 ```
 
 ## Licensing
