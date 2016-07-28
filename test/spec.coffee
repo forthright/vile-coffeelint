@@ -60,9 +60,9 @@ describe "vile-coffeelint", ->
                 sinon.match.string,
                 config.config
               )
-            .should.notify done
+            .should.notify -> done()
 
-    describe "with an erroneous file", ->
+    describe "with no files", ->
       it "returns an empty array", ->
         config =
           config: "coffeelint.json"
