@@ -1,6 +1,6 @@
 {
   "name": "vile-coffeelint",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "A vile plugin for CoffeeLint",
   "license": "MPL-2.0",
   "main": "lib/index.js",
@@ -10,7 +10,6 @@
     "README.md"
   ],
   "author": "Brent Lintner <brent.lintner@gmail.com>",
-  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/forthright/vile-coffeelint/issues"
   },
