@@ -97,35 +97,6 @@ To run tests with coverage:
 
 See `package.json` for other available scripts.
 
-## Versioning
-
-This project ascribes to [semantic versioning](http://semver.org).
-
-## Contributions
-
-Current list of [Contributors]().
-
-Any contributions are welcome and appreciated!
-
-All you need to do is submit a [Pull Request]().
-
-1. Please consider tests and code quality before submitting.
-2. Please try to keep commits clean, atomic and well explained (for others).
-
-### Issues
-
-Current issue tracker is on [GitHub]().
-
-Even if you are uncomfortable with code, an issue or question is welcome.
-
-### Code Of Conduct
-
-This project ascribes to CoralineAda's [Contributor Covenant](https://github.com/CoralineAda/contributor_covenant).
-
-### Maintainers
-
-- Brent Lintner - [@brentlintner](http://github.com/brentlintner)
-
 ## Architecture
 
 The node library written in basic JavaScript.
