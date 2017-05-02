@@ -1,11 +1,11 @@
 path = require "path"
 _ = require "lodash"
-sinon_chai = require "./helpers/sinon_chai"
+chai = require "./helpers/sinon_chai"
 mimus = require "mimus"
 sinon = require "sinon"
-chai = require "chai"
 expect = chai.expect
-lib = mimus.require "../lib/index", __dirname, ["vile"]
+vile = require "vile"
+lib = mimus.require "../lib/index", __dirname
 
 vile = mimus.get lib, "vile"
 
@@ -55,12 +55,14 @@ describe "vile-coffeelint", ->
 
         it "uses that", (done) ->
           lib.punish(config).should.be.fulfilled
-            .then ->
-              CSLint.should.have.been.calledWith(
-                sinon.match.string,
-                config.config
-              )
-            .should.notify -> done()
+            .notify ->
+              setTimeout ->
+                CSLint.should.have.been.calledWith(
+                  sinon.match.string,
+                  config.config
+                )
+                done()
+          return
 
     describe "with no files", ->
       it "returns an empty array", ->
