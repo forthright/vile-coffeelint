@@ -1,11 +1,10 @@
 # vile-coffeelint [![Circle CI](https://circleci.com/gh/forthright/vile-coffeelint.svg?style=shield&circle-token=6bbf75220c0e528b8a4ce2bc9426ea9f6b4df911)](https://circleci.com/gh/forthright/vile-coffeelint) [![score-badge](https://vile.io/api/v0/projects/vile-coffeelint/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coffeelint) [![security-badge](https://vile.io/api/v0/projects/vile-coffeelint/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coffeelint) [![coverage-badge](https://vile.io/api/v0/projects/vile-coffeelint/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coffeelint) [![dependency-badge](https://vile.io/api/v0/projects/vile-coffeelint/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coffeelint)
 
-A [vile](https://vile.io) plugin for [coffeelint](http://coffeelint.org).
+A [Vile](https://vile.io) plugin for ensuring consistent style in your CoffeeScript code (via [CoffeeLint](http://coffeelint.org)).
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
+- [Node.js](http://nodejs.org)
 
 ## Installation
 
@@ -46,8 +45,6 @@ coffeelint:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
-
 ## Licensing
 
 This project is licensed under the [MPL-2.0](LICENSE) license.
@@ -73,15 +70,13 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Maintainers
 
 - Brent Lintner - [@brentlintner](http://github.com/brentlintner)
 
-## Hacking
+## Developing
 
     cd vile-coffeelint
     npm install
