@@ -1,6 +1,6 @@
 {
   "name": "vile-coffeelint",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Ensure consistent style in your CoffeeScript code.",
   "license": "MPL-2.0",
   "main": "lib/index.js",
