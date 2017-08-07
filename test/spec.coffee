@@ -57,10 +57,8 @@ describe "vile-coffeelint", ->
           lib.punish(config).should.be.fulfilled
             .notify ->
               setTimeout ->
-                CSLint.should.have.been.calledWith(
-                  sinon.match.string,
-                  config.config
-                )
+                CSLint.should.have.been.called
+                expect(CSLint.args[0][1]).to.eql config.config
                 done()
           return
 
