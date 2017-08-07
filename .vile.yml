@@ -38,7 +38,3 @@ depcheck:
       - pryjs
       - shelljs
       - "vile-**"
-
-coverage:
-  config:
-    path: coverage/lcov.info
