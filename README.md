@@ -10,6 +10,16 @@ A [Vile](https://vile.io) plugin for ensuring consistent style in your CoffeeScr
 
     npm i -D vile vile-coffeelint
 
+## Usage
+
+*configure CoffeeLint*
+
+    npx coffeelint --makeconfig > coffeelint.json
+
+*run the plugin*
+
+    npx vile a -p coffeelint
+
 ## Config
 
 By default, config defaults to `coffeelint.json`.
